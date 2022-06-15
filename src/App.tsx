@@ -1,4 +1,6 @@
 import { useCount } from "../src/hooks/useCount";
+
+import { PrimaryButton } from "../src/components/atoms/button/PrimaryButton";
 import "./styles.css";
 
 export default function App() {
@@ -9,10 +11,10 @@ export default function App() {
       {count}
       <br />
       <br />
-      <button onClick={onClickCountUp}>CountUp</button>
+      <PrimaryButton onClick={onClickCountUp}>CountUp</PrimaryButton>
       <br />
       <br />
-      <button onClick={onClickCountDown}>CountDown</button>
+      <PrimaryButton onClick={onClickCountDown}>CountDown</PrimaryButton>
     </div>
   );
 }
